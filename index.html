@@ -9,26 +9,59 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 	<style>
-	.fakeimg {
-		height: 200px;
-		background: #aaa;
-	}
 	.divback{
-		background-image:url(_image/background.jpg); 
+		background-image:url(_image/imagem.png); 
 		background-repeat: no-repeat;
 		background-position: center;
+		background-size: 100%;
 	}
 	.link{
 		color: green;
 	}
-
-</style>
+	.carousel-inner img {
+      width: 100%;
+      height: 100%;
+  	}
+	</style>
 </head>
 <body>
 
 	<div class="jumbotron text-center divback" style="margin-bottom:0">
-		<img src="_image/logo.png" width="300">
+		<img src="_image/marcaUnimed.png" width="300">
 	</div>
+
+	<!--Carousel-->
+	<div id="demo" class="carousel slide" data-ride="carousel">
+	  <ul class="carousel-indicators">
+	    <li data-target="#demo" data-slide-to="0" class="active"></li>
+	    <li data-target="#demo" data-slide-to="1"></li>
+	  </ul>
+	  <div class="carousel-inner">
+	    <div class="carousel-item active">
+	      <img src="_image/viverBem.png" width="1100" height="500">
+	      <div class="carousel-caption">
+	      </div>   
+	    </div>
+	    <div class="carousel-item">
+	      <img src="_image/imagem.png" width="300" height="100">
+	      <div class="carousel-caption">
+	      </div>   
+	    </div>
+	  </div>
+	  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+	    <span class="carousel-control-prev-icon"></span>
+	  </a>
+	  <a class="carousel-control-next" href="#demo" data-slide="next">
+	    <span class="carousel-control-next-icon"></span>
+	  </a>
+	</div>
+
+
+	<!--
+	<div class="jumbotron text-center divback" style="margin-bottom:0">
+		<img src="_image/marcaUnimed.png" width="300">
+	</div>
+	-->
 
 	<!--Navegação-->
 	<nav class="navbar navbar-expand-sm bg-success navbar-dark">
